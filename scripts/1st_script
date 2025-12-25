@@ -1,0 +1,5 @@
+import bpy
+
+# setup scene
+world_obj = bpy.data.worlds["World"]
+world_obj.node_tree.nodes["Background"].inputs["Color"].default_value = (0, 0, 0, 1)
